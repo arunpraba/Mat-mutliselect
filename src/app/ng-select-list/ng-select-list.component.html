@@ -1,0 +1,8 @@
+<mat-selection-list #listsSelected>
+  <mat-list-option *ngIf="lists.length>0" (click)="toggleAll(listsSelected)">
+    Select All
+  </mat-list-option>
+  <mat-list-option *ngFor="let item of lists">
+    {{item.text}}
+  </mat-list-option>
+</mat-selection-list>
